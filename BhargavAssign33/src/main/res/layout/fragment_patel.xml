@@ -6,9 +6,10 @@
     android:theme="@style/Theme.PatelFragment"
     tools:context=".Fragment2.PatelFragment">
 
-    <TextView
-        android:id="@+id/BhargavTV3"
-        android:layout_width="251dp"
-        android:layout_height="248dp"
-        android:text="Fragment2" />
+    <Button
+        android:id="@+id/BhargavCamBtn"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="Camera"></Button>
+
 </FrameLayout>
