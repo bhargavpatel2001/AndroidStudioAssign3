@@ -1,15 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:theme="@style/Theme.BhargavFragment"
     tools:context=".Fragment1.BhargavFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/BhargavClearBtn"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Clear"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/black">
+    </Button>
+
+    <ImageButton
+        android:id="@+id/BhargavCOptions1"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/blackcolor">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/BhargavImgV"
+        android:layout_width="wrap_content"
+        android:layout_height="302dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="374dp"
+        android:src="@mipmap/obito_foreground">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/BhargavTV2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="682dp"
+        android:text="Bhargav N01373029"
+        android:textAlignment="center"
+        android:theme="@style/ObjectFragment1">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/BhargavCOptions2"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/cyancolor">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/BhargavCOptions3"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/greencolor">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/BhargavSOptions1"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="320dp"
+        android:src="@mipmap/smallstroke">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/BhargavSOptions2"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/mediumstroke">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/BhargavSOptions3"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="200dp"
+        android:src="@mipmap/largestroke">
+    </ImageButton>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="237dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="119dp">
+
+        <bhargav.patel.n01373029.BhargavCanvas
+            android:id="@+id/BhargavDrawCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.635">
+        </bhargav.patel.n01373029.BhargavCanvas>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

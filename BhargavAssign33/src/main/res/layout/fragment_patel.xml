@@ -6,17 +6,9 @@
     android:theme="@style/Theme.PatelFragment"
     tools:context=".Fragment2.PatelFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
+        android:id="@+id/BhargavTV3"
         android:layout_width="251dp"
         android:layout_height="248dp"
-        android:text="@string/hello_blank_fragment" />
-
-    <fragment
-        android:id="@+id/fragment"
-        android:name="bhargav.patel.n01373029.Fragment2.PatelFragment"
-        android:layout_width="150dp"
-        android:layout_height="171dp" />
-
+        android:text="Fragment2" />
 </FrameLayout>
