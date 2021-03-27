@@ -10,6 +10,67 @@
         android:id="@+id/BhargavCamBtn"
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:text="Camera"></Button>
+        android:text="Camera">
+    </Button>
 
+    <Button
+        android:id="@+id/BhargavStartBtn"
+        android:layout_width="205dp"
+        android:layout_height="59dp"
+        android:layout_alignBottom="@id/BhargavCamBtn"
+        android:layout_gravity="left"
+        android:layout_marginTop="60dp"
+        android:text="Start">
+    </Button>
+
+    <Button
+        android:id="@+id/BhargavStopBtn"
+        android:layout_width="205dp"
+        android:layout_height="59dp"
+        android:layout_alignBottom="@id/BhargavCamBtn"
+        android:layout_gravity="right"
+        android:layout_marginTop="60dp"
+        android:text="Stop">
+    </Button>
+
+    <ImageView
+        android:id="@+id/BhargavGifImg"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:layout_marginTop="120dp">
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/BhargavSpeedBtn1"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left|bottom"
+        android:text="Speed1">
+    </Button>
+
+    <Button
+        android:id="@+id/BhargavSpeedBtn2"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center|bottom"
+        android:text="Speed2">
+    </Button>
+
+    <Button
+        android:id="@+id/BhargavSpeedBtn3"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right|bottom"
+        android:text="Speed3">
+    </Button>
+
+    <Button
+        android:id="@+id/BhargavSpeedBtn4"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        android:text="Default Speed">
+    </Button>
 </FrameLayout>
