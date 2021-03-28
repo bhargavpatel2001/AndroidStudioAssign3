@@ -10,4 +10,19 @@
     <string name="btnSpeed3">Speed3</string>
     <string name="btnSpeed2">Speed2</string>
     <string name="btnSpeed1">Speed1</string>
+    <string name="btnStop2">Stop</string>
+    <string name="btnStart">Start</string>
+    <string name="btnCamera">Camera</string>
+    <string name="btnClear">Clear</string>
+    <string name="TVmyNameID">Bhargav N01373029</string>
+    <string name="BNworld">World</string>
+    <string name="BNcamera">Camera</string>
+    <string name="BNpaint">Paint</string>
+    <string name="AlertTitle">BhargavPatel N01373029</string>
+    <string name="AlertMessage">Are you sure you want to close the application?</string>
+    <string name="Toast1">Permission has been granted</string>
+    <string name="Toast2">Permission has been granted</string>
+    <string name="Toast3">Permission has been Denied</string>
+    <string name="AlertTitle2">Required Permissions</string>
+    <string name="AlertMessage2">Try again to grant permission ?</string>
 </resources>

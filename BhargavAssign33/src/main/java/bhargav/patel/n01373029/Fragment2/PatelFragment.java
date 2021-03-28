@@ -80,7 +80,7 @@ public class PatelFragment extends Fragment {
                 if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
 
                     // To Show a Toast
-                    Toast toast = Toast.makeText(getActivity(), "Permission has been granted", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(getActivity(), R.string.Toast1, Toast.LENGTH_LONG);
                     toast.show();
                     Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
                     startActivity(intent);
@@ -134,12 +134,12 @@ public class PatelFragment extends Fragment {
         if (requestCode == STORAGE_PERMISSION_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 // To Show a Toast
-                Toast toast = Toast.makeText(getActivity(),"Permission has been granted",Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getActivity(), R.string.Toast2,Toast.LENGTH_LONG);
                 toast.show();
             }
             else {
                 // To Show a Toast
-                Toast toast = Toast.makeText(getActivity(),"Permission has been Denied",Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getActivity(), R.string.Toast3,Toast.LENGTH_LONG);
                 toast.show();
             }
 
@@ -149,8 +149,8 @@ public class PatelFragment extends Fragment {
         if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),Manifest.permission.READ_EXTERNAL_STORAGE)){
 
             new AlertDialog.Builder(getActivity())
-                    .setTitle("Required Permissions")
-                    .setMessage("Try again to grant permission ?")
+                    .setTitle(R.string.AlertTitle2)
+                    .setMessage(R.string.AlertMessage2)
                     .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

@@ -32,7 +32,7 @@ public class BhargavActivity extends AppCompatActivity {
         botNavView.setOnNavigationItemSelectedListener(botNavListener);
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener botNavListener =
+    private final BottomNavigationView.OnNavigationItemSelectedListener botNavListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -63,8 +63,8 @@ public class BhargavActivity extends AppCompatActivity {
         public void onBackPressed() {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle("BhargavPatel N01373029")
-                    .setMessage("Are you sure you want to close the application?")
+                    .setTitle(R.string.AlertTitle)
+                    .setMessage(R.string.AlertMessage)
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
