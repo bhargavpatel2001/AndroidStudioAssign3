@@ -19,7 +19,6 @@ import bhargav.patel.n01373029.R;
 
 public class N01373029Fragment extends Fragment {
 
-
     Button btnRotate, btnCancel;
 
     @Override
@@ -40,14 +39,12 @@ public class N01373029Fragment extends Fragment {
         Animation an = AnimationUtils.loadAnimation(getActivity(), R.anim.tweening_transformations);
         layoutToAnimate.startAnimation(an);
 
-
         btnRotate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 layoutToAnimate.startAnimation(an);
             }
         });
-
 
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override

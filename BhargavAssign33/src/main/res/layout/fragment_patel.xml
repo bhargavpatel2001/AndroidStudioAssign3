@@ -39,7 +39,6 @@
         android:background="@drawable/framesharingan6">
     </ImageView>
 
-
     <Button
         android:id="@+id/BhargavSpeedBtn1"
         android:layout_width="140dp"

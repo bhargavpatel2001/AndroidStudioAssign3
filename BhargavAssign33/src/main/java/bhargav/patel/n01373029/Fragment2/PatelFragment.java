@@ -142,12 +142,10 @@ public class PatelFragment extends Fragment {
                 Toast toast = Toast.makeText(getActivity(), R.string.Toast3,Toast.LENGTH_LONG);
                 toast.show();
             }
-
         }
     }
     private void requestStrongPermission(){
         if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),Manifest.permission.READ_EXTERNAL_STORAGE)){
-
             new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.AlertTitle2)
                     .setMessage(R.string.AlertMessage2)
@@ -165,7 +163,6 @@ public class PatelFragment extends Fragment {
                     })
                     .create().show();
         }
-
         else {
             ActivityCompat.requestPermissions(getActivity(),new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
         }
@@ -198,6 +195,7 @@ public class PatelFragment extends Fragment {
         mframeAnimation.setVisible(true,true);
         mframeAnimation.start();
     }
+
     private void stopAnimation()
     {
         mframeAnimation.stop();
