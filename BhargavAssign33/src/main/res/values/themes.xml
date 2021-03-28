@@ -15,15 +15,15 @@
         <item name="android:windowBackground">#A003F4</item>
     </style>
 
-    <style name ="Theme.BhargavFragment"  parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name ="BhargavFragment" >
         <item name="android:background">#FF5722</item>
     </style>
 
-    <style name ="Theme.PatelFragment"  parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="android:background">#FFFFFF</item>
+    <style name ="PatelFragment">
+        <item name="android:background">#000000</item>
     </style>
 
-    <style name ="Theme.N01373029Fragment"  parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name ="N01373029Fragment">
         <item name="android:background">#33CD39</item>
     </style>
 

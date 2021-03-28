@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.PatelFragment"
+    android:theme="@style/PatelFragment"
     tools:context=".Fragment2.PatelFragment">
 
     <Button
@@ -19,7 +19,7 @@
         android:layout_height="59dp"
         android:layout_alignBottom="@id/BhargavCamBtn"
         android:layout_gravity="left"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="49dp"
         android:text="Start">
     </Button>
 
@@ -27,9 +27,8 @@
         android:id="@+id/BhargavStopBtn"
         android:layout_width="205dp"
         android:layout_height="59dp"
-        android:layout_alignBottom="@id/BhargavCamBtn"
         android:layout_gravity="right"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="49dp"
         android:text="Stop">
     </Button>
 
@@ -37,7 +36,8 @@
         android:id="@+id/BhargavGifImg"
         android:layout_width="match_parent"
         android:layout_height="432dp"
-        android:layout_marginTop="120dp">
+        android:layout_marginTop="120dp"
+        android:background="@drawable/framesharingan6">
     </ImageView>
 
 
@@ -45,8 +45,8 @@
         android:id="@+id/BhargavSpeedBtn1"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:layout_gravity="left|bottom"
-        android:text="Speed1">
+        android:layout_gravity="start|bottom"
+        android:text="@string/btnSpeed1">
     </Button>
 
     <Button
@@ -54,15 +54,15 @@
         android:layout_width="140dp"
         android:layout_height="70dp"
         android:layout_gravity="center|bottom"
-        android:text="Speed2">
+        android:text="@string/btnSpeed2">
     </Button>
 
     <Button
         android:id="@+id/BhargavSpeedBtn3"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:layout_gravity="right|bottom"
-        android:text="Speed3">
+        android:layout_gravity="end|bottom"
+        android:text="@string/btnSpeed3">
     </Button>
 
     <Button
@@ -71,6 +71,6 @@
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="230dp"
-        android:text="Default Speed">
+        android:text="@string/btnDefaultSpd">
     </Button>
 </FrameLayout>

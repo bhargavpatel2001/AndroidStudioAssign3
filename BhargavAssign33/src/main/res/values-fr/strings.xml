@@ -1,10 +1,9 @@
-<!--BhargavPatel N01373029 SectionB-->
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BhargavPatelN01373029</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="rotateName">Bhargav</string>
     <string name="rotateLName">Patel</string>
-    <string name="btnRotate">Rotate</string>
+    <string name="app_name">B</string>
+    <string name="hello_blank_fragment">H</string>
     <string name="btnStop">Stop</string>
     <string name="btnDefaultSpd">Default Speed</string>
     <string name="btnSpeed3">Speed3</string>

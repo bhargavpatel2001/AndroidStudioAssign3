@@ -95,7 +95,7 @@ public class PatelFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //If you want the frame to be per second set reasonableDuration = 1000 the frames will be 1 second;
-                reasonableDuration = 100;
+                reasonableDuration = 1;
                 stopAnimation();
                 startAnimation();
             }
@@ -104,7 +104,7 @@ public class PatelFragment extends Fragment {
         btnSpeed2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                reasonableDuration = 200;
+                reasonableDuration = 80;
                 stopAnimation();
                 startAnimation();
             }
