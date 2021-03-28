@@ -25,6 +25,7 @@ public class N01373029Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_n01373029, container, false);
     }
 
@@ -32,12 +33,13 @@ public class N01373029Fragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
+
         btnRotate = view.findViewById(R.id.BhargavStartBtn2);
         btnCancel = view.findViewById(R.id.BhargavStopBtn2);
 
         LinearLayout layoutToAnimate = view.findViewById(R.id.BhargavLL);
         Animation an = AnimationUtils.loadAnimation(getActivity(), R.anim.tweening_transformations);
-        layoutToAnimate.startAnimation(an);
 
         btnRotate.setOnClickListener(new View.OnClickListener() {
             @Override

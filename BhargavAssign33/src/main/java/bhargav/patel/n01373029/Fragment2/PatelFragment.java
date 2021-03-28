@@ -17,6 +17,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,13 +26,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import bhargav.patel.n01373029.BhargavActivity;
 import bhargav.patel.n01373029.R;
 
 public class PatelFragment extends Fragment {
 
-    public static final int REQUEST_ID_MULTIPLE_PERMISSIONS= 7;
-    private int STORAGE_PERMISSION_CODE = 1;
+    private final int CAMERA_PERMISSION_CODE = 1;
     AnimationDrawable mframeAnimation = null;
 
     Button btnCam,starter,stopper;
@@ -77,16 +79,16 @@ public class PatelFragment extends Fragment {
         btnCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
 
                     // To Show a Toast
                     Toast toast = Toast.makeText(getActivity(), R.string.Toast1, Toast.LENGTH_LONG);
                     toast.show();
-                    Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+                    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivity(intent);
                 }
                 else {
-                    requestStrongPermission();
+                    requestCameraPermission();
                 }
             }
         });
@@ -131,28 +133,29 @@ public class PatelFragment extends Fragment {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode == STORAGE_PERMISSION_CODE) {
+        if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 // To Show a Toast
                 Toast toast = Toast.makeText(getActivity(), R.string.Toast2,Toast.LENGTH_LONG);
                 toast.show();
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
             }
             else {
-                // To Show a Toast
-                Toast toast = Toast.makeText(getActivity(), R.string.Toast3,Toast.LENGTH_LONG);
-                toast.show();
+                // To Show a Snackbar
+                Snackbar.make(getActivity().findViewById(android.R.id.content),R.string.Toast3,Snackbar.LENGTH_LONG).show();
             }
         }
     }
-    private void requestStrongPermission(){
-        if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),Manifest.permission.READ_EXTERNAL_STORAGE)){
+    private void requestCameraPermission(){
+        if (shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)){
             new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.AlertTitle2)
                     .setMessage(R.string.AlertMessage2)
                     .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions(getActivity(),new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
+                            requestPermissions(new String[] {Manifest.permission.CAMERA}, CAMERA_PERMISSION_CODE);
                         }
                     })
                     .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
@@ -164,7 +167,7 @@ public class PatelFragment extends Fragment {
                     .create().show();
         }
         else {
-            ActivityCompat.requestPermissions(getActivity(),new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
+            requestPermissions(new String[] {Manifest.permission.CAMERA},CAMERA_PERMISSION_CODE);
         }
     }
 
