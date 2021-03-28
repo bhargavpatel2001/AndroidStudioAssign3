@@ -152,13 +152,13 @@ public class PatelFragment extends Fragment {
             new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.AlertTitle2)
                     .setMessage(R.string.AlertMessage2)
-                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.AlertOk, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             requestPermissions(new String[] {Manifest.permission.CAMERA}, CAMERA_PERMISSION_CODE);
                         }
                     })
-                    .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(R.string.AlertCancel, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();

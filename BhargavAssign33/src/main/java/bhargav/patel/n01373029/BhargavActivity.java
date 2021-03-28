@@ -65,7 +65,7 @@ public class BhargavActivity extends AppCompatActivity {
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle(R.string.AlertTitle)
                     .setMessage(R.string.AlertMessage)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.AlertYes, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -73,7 +73,7 @@ public class BhargavActivity extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("No", null)
+                    .setNegativeButton(R.string.AlertNo, null)
                     .show();
         }
 }

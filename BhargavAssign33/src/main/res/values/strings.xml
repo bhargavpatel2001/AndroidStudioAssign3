@@ -25,4 +25,8 @@
     <string name="Toast3">Permission has been Denied</string>
     <string name="AlertTitle2">Required Permissions</string>
     <string name="AlertMessage2">Try again to grant permission ?</string>
+    <string name="AlertYes">Yes</string>
+    <string name="AlertNo">No</string>
+    <string name="AlertOk">ok</string>
+    <string name="AlertCancel">cancel</string>
 </resources>

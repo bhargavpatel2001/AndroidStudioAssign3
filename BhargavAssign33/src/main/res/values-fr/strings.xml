@@ -25,4 +25,8 @@
     <string name="AlertTitle2">"Autorisations requises "</string>
     <string name="AlertMessage2">"Réessayer d’accorder l’autorisation? "</string>
     <string name="btnRotate">"Tourner "</string>
+    <string name="AlertYes">Oui</string>
+    <string name="AlertNo">"Non "</string>
+    <string name="AlertOk">"d'accord "</string>
+    <string name="AlertCancel">Annuler</string>
 </resources>
